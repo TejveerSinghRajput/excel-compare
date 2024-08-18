@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Comparison Result</title>
+</head>
+<body>
+<h2>Comparison Result</h2>
+<p th:if="${areSimilar}">The files are similar.</p>
+<p th:if="${!areSimilar}">The files are not similar.</p>
+<p th:if="${error}" th:text="${error}"></p>
+<a href="/">Compare Another Set of Files</a>
+</body>
+</html>
